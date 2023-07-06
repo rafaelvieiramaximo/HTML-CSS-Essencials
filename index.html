@@ -26,8 +26,6 @@
         .display-colum{
             display: flex;
             justify-content: space-around;
-            background-color: #006A6B;
-            padding: 30px;
         }
         .header-title{
             color: #016A67;
@@ -41,6 +39,51 @@
             font-size: 20px;
             margin-bottom: 15px;
         }
+        .button{
+            border-radius: 4px;
+            width: 100%;
+            padding: 15px 25px;
+            background-color: #CCCCCC;
+            color: #017575;
+            font-size: 15px;
+            font-weight: 500;
+            overflow: hidden;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #F0F0E8;
+        }
+        .first-colum{
+            background-color: #016C6C;
+            width: 50%;
+            padding: 20px;
+        }
+        .second-colum{
+            background-color: #00908F;
+            width: 50%;
+            padding: 20px;
+        }
+        .colorsubtitle{
+            color: #F0F0E8;
+            
+        }
+        .sub-title-colum{
+            margin-bottom: 15px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 400;
+        }
+        .value-subtitle{
+            font-size: 30px;
+            font-weight: 700;
+        }
+        .month{
+            margin-left: 15px;
+        }
+        
+        
     </style>
 
 </head>
@@ -59,13 +102,29 @@
             </div>
         </div>
         <div class="display-colum">
-            <div>
-                COLUNA 1.
+            <div class="first-colum">
+                  <div class="colorsubtitle">
+                        <div class="sub-title-colum">
+                            Assinatura mensal:
+                        </div>
+                        <div>
+                            <span class="value-subtitle">R$99,00</span><span><i class="month">por mês.</i></span>
+                        </div>
+                        <div>
+                            Cancele a qualquer momento.
+                        </div> 
+                        <div>
+                            <button class="button">Assine Agora</button>
+                        </div>
+                  </div>  
             </div>
-            <div>
-                COLUNA 2
+            <div class="second-colum">
+                <div>
+                    Coluna
+
+                </div>
             </div>
-        </div>
+        
     </div>
 </body>
 </html>
