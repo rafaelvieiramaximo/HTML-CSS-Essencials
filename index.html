@@ -13,7 +13,7 @@
         .cont{
             background-color: #E9E9E9;
             margin: auto;
-            width: 600px;
+            width: 37.5rem;
             box-shadow: 2px 4px 10px 3px rgba(0, 0, 0, 0.21);
             border-radius: 4px;
             overflow: hidden;
@@ -21,7 +21,7 @@
         
         .hearder{
             margin: auto;
-            padding: 30px;
+            padding: 1.8rem;
         }
         .display-colum{
             display: flex;
@@ -29,14 +29,14 @@
         }
         .header-title{
             color: #016A67;
-            font-size: 30px;
+            font-size: 2.1rem;
             font-weight: 700;
             margin-bottom: 15px;
         }
         .header-sub-title{
             color: #52958F;
             font-weight: 500;
-            font-size: 20px;
+            font-size: 1.25rem;
             margin-bottom: 15px;
         }
         .button{
@@ -45,7 +45,7 @@
             padding: 15px 25px;
             background-color: #CCCCCC;
             color: #017575;
-            font-size: 15px;
+            font-size: 0.9rem;
             font-weight: 500;
             overflow: hidden;
             margin-top: 20px;
@@ -72,12 +72,12 @@
         }
         .sub-title-colum{
             margin-bottom: 15px;
-            font-size: 18px;
+            font-size: 1.1rem;
             text-align: center;
             font-weight: 400;
         }
         .value-subtitle{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: 700;
         }
         .month{
@@ -89,60 +89,73 @@
         .icon{
             text-align: center;
         }
-        
-        
+        @media screen and (max-width:600px){
+            html{
+                font-size: 10px;
+            }
+            .display-colum{
+                flex-direction: column;
+            }
+            .first-colum, .second-colum{
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .cont{
+                width: 95%;
+            }
+        }
     </style>
 
 </head>
-<body>
-    <div class="cont">
-        <div class="hearder">
-            <div class="header-title">
-                Entre para nossa comunidade!
-            </div>
-            <div class="header-sub-title">
-                Faça a sua assinatura agora e ganhe 30% de desconto!
-            </div>
-            <div>
-                Faça parte da nossa comunidade de desenvolvedores. <br>
-                Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.   
-            </div>
-        </div>
-        <div class="display-colum">
-            <div class="first-colum">
-                  <div class="colorsubtitle">
-                        <div class="sub-title-colum">
-                            Assinatura mensal:
-                        </div>
-                        <div>
-                            <span class="value-subtitle">R$99,00</span><span><i class="month">por mês.</i></span>
-                        </div>
-                        <div>
-                            Cancele a qualquer momento.
-                        </div> 
-                        <div>
-                            <button class="button">Assine Agora</button>
-                        </div>
-                  </div>  
-            </div>
-            <div class="second-colum">
-                <div class="icon">
-                    <object data="group-svgrepo-com (1).svg" type="image/svg+xml"></object>
+    <body>
+        <div class="cont">
+                <div class="hearder">
+                    <div class="header-title">
+                        Entre para nossa comunidade!
+                    </div>
+                    <div class="header-sub-title">
+                        Faça a sua assinatura agora e ganhe 30% de desconto!
+                    </div>
+                    <div>
+                        Faça parte da nossa comunidade de desenvolvedores. <br>
+                        Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.   
+                    </div>
                 </div>
-                <div>
-                    Você terá acesso:</br>
-                    <ul>
-                        <li>Projetos exclusivos</li>
-                        <li>Tutoriais</li>
-                        <li>Lives Semanais</li>
-                        <li>Material didático especializado</li>
-                        <li>Forúm</li>
-                        <li>Ofertas de empregos</li>
-                    </ul>
+                <div class="display-colum">
+                    <div class="first-colum">
+                        <div class="colorsubtitle">
+                                <div class="sub-title-colum">
+                                    Assinatura mensal:
+                                </div>
+                                <div>
+                                    <span class="value-subtitle">R$99,00</span><span><i class="month">por mês.</i></span>
+                                </div>
+                                <div>
+                                    Cancele a qualquer momento.
+                                </div> 
+                                <div>
+                                    <button class="button">Assine Agora</button>
+                                </div>
+                        </div>  
+                    </div>
+                    <div class="second-colum">
+                        <div class="icon">
+                            <object data="group-svgrepo-com (1).svg" type="image/svg+xml"></object>
+                        </div>
+                        <div>
+                            Você terá acesso:</br>
+                            <ul>
+                                <li>Projetos exclusivos</li>
+                                <li>Tutoriais</li>
+                                <li>Lives Semanais</li>
+                                <li>Material didático especializado</li>
+                                <li>Forúm</li>
+                                <li>Ofertas de empregos</li>
+                            </ul>
 
+                        </div>
+                    </div>
                 </div>
-            </div>
-        
-    </div>
-</body>
+        </div>
+    </body>
 </html>
